@@ -27,7 +27,7 @@ git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME checkout -f
 
 sudo apt update && sudo xargs -a ~/.config/Aptfile apt install -y
 
-chsh -s $(which zsh)
+sudo chsh $(whoami) -s $(which zsh)
 
 mkdir -p ~/.config/zsh
 
